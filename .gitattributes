@@ -1,1 +1,13 @@
+# Normalize line endings
 * text=auto
+
+# Ignore lockfiles and configs from GitHub language stats
+package-lock.json linguist-generated
+tailwind.config.ts linguist-detectable=false
+postcss.config.* linguist-detectable=false
+tsconfig.json linguist-detectable=false
+next.config.ts linguist-detectable=false
+
+# Prioritize key languages
+*.tsx linguist-language=TypeScript
+*.ts linguist-language=TypeScript
